@@ -64,14 +64,28 @@
 
     <div class="commentaire">
 
+        <form action="test.php" method="POST">
 
-       <h1> Avis clients : </h1>
-
-        <p> Pseudo : <input type="text" name="pseudo"> </p>
-
-        <p> Commentaire : <input type="text" class="p"> </p>
-
-        <button type="submit"> Envoyer </button> 
+            <table [style=background-color: black;]>
+                <tr>
+                    <td>Avis clients :</td>
+                </tr>
+                <tr>
+                    <td><label for="pseudo">Pseudo :</label></td>
+                    <td><input type="text" name="pseudo" id="pseudo"></td>
+                </tr>
+                <tr>
+                    <td><label for="commentaire">Commentaire :</label></td>
+                    <td><textarea name="commentaire" class="p" required></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Envoyer</button></td>
+                </tr>
+            </table>
+            
+         
+         </form>
 
     
     </div>
